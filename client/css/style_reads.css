@@ -1,0 +1,86 @@
+/*---------------------------------------
+Header and Toolbar
+---------------------------------------*/
+#nav ul.horizontal {
+	display: inline;
+	position: relative;
+/*  left: 0;
+  top: 0;*/
+	background-color: #293E6A;
+	height: auto;
+	width: 100%;
+	float: left;
+	list-style-type: none;
+	padding: 5px 10px;
+}
+
+
+#nav h1.Title a{
+	color: #ECECEA;
+	text-decoration: none;
+  float: left;
+}
+
+#nav ul.right_ul {
+	font-size: 1.1em;
+	float: right;
+	padding: 5px 10px;
+}
+
+li.contact{
+	list-style-type: none;
+	font-size: 1.2em;
+	margin: 0;
+  padding: 5px;
+	display: inline;
+}
+
+li.contact a{
+	color: #ECECEA;
+	text-decoration: none;
+}
+
+li.contact a:hover {
+  background-color: #D9853B;
+  color: #ECECEA;
+  text-decoration: underline;
+}
+
+/*---------------------------------------
+General Body
+---------------------------------------*/
+
+ body{
+ margin:0px;
+ background-color:#3F2860
+ } 
+
+#section {
+	margin: 15px;
+}
+
+p.section_header {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #558C89;
+}
+/*---------------------------------------
+Reading Lists
+---------------------------------------*/
+p {
+  font-size: 18pt;
+  font-weight: bold;
+  color:#558C89;
+}
+
+li {
+  font-size: 14pt;
+  line-height: 150%;
+  color:#ECECEA;
+}
+
+li a{
+  list-style-type: none;
+  font-style: underline;
+  color:#ECECEA;
+}

@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+<title>KelseyGross.com</title>
+<script src="jquery-2.1.4.min.js"></script>
+<script> 
+$(function(){
+  $("#header").load("header.html");  
+});
+</script> 
+</head>
+<body>
+<div id="header"></div>
+<div id="section">
+	<p class="section_header">About Me</p>
+	<div id="aboutme">
+		<img src="images/kelsey_ben_zion.jpg" alt="Kelsey" style="width:125px;height:125px;">
+		<p class="blurb">When not in San Francisco, you can find me scurrying up mountains, reading in a coffee shop, and/or hunting down delicious ice cream cones all around the world. I'm a data analyst by day, code things on the side, and spend the rest of my time outside.</p>
+	</div>
+</div>
+
+
+<div id="section">
+	<p class="section_header">My Projects</p>
+	<div id="project">
+		<img src="images/advent_of_code.png" alt="Mountain View" style="width:304px;height:228px;">
+		<h3 class="project"><a href="https://github.com/kjgross/advent_of_code">Advent of Code</a></h3>
+		<p class="project">25 puzzle challenge. Completed puzzles first in python, then in Go!. Each project focuses on a particular basic skill set, from recursion to run-time optimization.</p>
+	</div>
+	<div id="project">
+		<img src="images/soccer_epic2.jpg" alt="Mountain View" style="width:304px;height:228px;">
+		<h3 class="project"><a href="https://github.com/blakeparkinson/sports2">Rosterblitz.com</a></h3>
+		<p class="project">A Sports Trivia website. I lead backend development for our team of three, implementing NodeJS with MongoDB. During this project, I learned NodeJS, Heroku deployment, non-relational databases, and Redis caching.</p>
+	</div>
+	<div id="project">
+		<img src="images/deep_dream_example.jpeg" alt="Mountain View" style="width:304px;height:228px;">
+		<h3 class="project"><a href="https://github.com/kjgross/deepdream">Deep Dream</a></h3>
+		<p class="project">W.I.P.- using deep dream algorthims from Berkley and Google? I create my own deep dream images.</p>
+	</div>
+</div>
+
+<div id="section">
+	<p class="section_header">Other Stuff I'm up to:</p>
+	<ul>
+		<li class="otherstuff"><a href="recent_reads.html">Recently Read</a></li>
+		<li class="otherstuff"><a href="nature.html">Favorite Hikes</a></li>
+	</ul>
+</div>
+</body>
+</html>
