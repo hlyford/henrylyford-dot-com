@@ -3,8 +3,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Kelsey Gross</title>
-  <meta name="description" content="Kelsey Gross Personal Website">
+  <title>Henry Lyford</title>
+  <meta name="description" content="Henry Lyford Personal Website">
   <meta name="author" content="Kelsey Gross">
   <meta name="keywords" content="Kelsey Gross, Claremont McKenna College, Medford, Oregon, Claremont, San Francisco, Edmodo, Data Analyst, Rosterblitz, Women in Engineering, Women in Data Science"/>
   <meta property="description" content="Kelsey Gross is a Data Analyst for Edmodo, Inc. and is looking to switch to a fullstack engineering role. She is originally from Medford, Oregon and is currently living in San Francisco.">
@@ -12,7 +12,9 @@
    Well hello there! Thanks for stopping my little site- I mimicked a few nice blogs I saw, and will probably update this design again once it's painfully out of style. LMK when that happens...!
    Source code is here: https://github.com/kjgross/kelseygross-dot-com
   -->
-  <link rel="icon" href="images/icecream.png" sizes="16x16" type="image/png"/>
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/b/b2/Hausziege_04.jpg" sizes="16x16" type="image/png"/>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -41,13 +43,13 @@
 		<div id="header-spacer" style="height: 98px;"></div>
 		</div>
 	</div> -->
-	<div>
+	<div class="main-container">
 		<ul class="slides" data-bind="stopBinding: true">
 			<li class="slide">
 				<a class="section-anchor" data-scroll-name="#2"></a>
 				<a class="section-name-anchor" data-section-name="Welcome"></a><a name="welcome"></a>
 				<div class="wide image resize strikingly-light-text lazy-background hasImage" data-bind="'className': background.getSelectedClassName(), 'style': background.selectedStyleLazy(), 'css':{'lazy':true, 'lazy-background':true, 'video-bg': background.video.videoBackgroundEnabled, hasImage:background.hasContent()}, 'attr': {'data-background': background.assetUrl()}"
-				 data-background="images/bryce_pano1.jpg" style="background-image: url(&quot;images/bryce_pano1.jpg&quot;); background-size: auto; background-position: 49% 50%; background-repeat: no-repeat; margin-top: -32px;"> 
+				 data-background="images/hal_alaska.png" style="background-image: url(&quot;images/hal_pano.png&quot;); background-size: auto; background-position: 49% 50%; background-repeat: no-repeat; margin: -32px;"> 
 					<div class="container"> 
 						<div class="sixteen columns"> 
 							<div class="spacer" style="height:10px">&nbsp;</div> 
@@ -65,7 +67,7 @@
 								<h1 class="title big">
 									<div data-component="text" data-name="text2" data-text-type="title" class="text-component">
 										<div class="content content2" data-bind="visible: !(text2.isState('editor') || !text2.hasContent()), htmlValue: text2.value, style: window.edit_page.data.fontStyle('titleFont') ">
-											<div>Kelsey Gross</div>
+											<div>Henry Lyford</div>
 										</div>
 									</div>
 								</h1> 
@@ -86,15 +88,14 @@
 								<div class="no-float mb30 repeatable" data-bind="mouseenter: mouseeneterHandler, mouseleave: mouseleaveHandler">
 									<div class="five columns center">
 										<div class="imagecover" data-bind="visible: components.image.hasContentOrIsEditMode">
-											<div data-component="image" data-image-size="280x280#" data-name="components.image" data-use-url="true">
-												<div class="content content2" data-bind="fadeVisibleAndHide: !components.image.isState('editor')" style="visibility: visible; opacity: 1;"><a class="image-link" data-bind="if: components.image.hasLink() || !edit_page.isShowPage, attr: { href: components.image.link(), target: components.image.target() }" href="javascript:void(0);" target="_self"></a><span class="image-link" data-bind="ifnot: components.image.hasLink() || !edit_page.isShowPage"><img data-bind="attr: { 'class': 'lazy lazy-img', 'data-original': components.image.assetUrl, alt: components.image.caption, title: components.image.caption }" src="images/kjg_parasailing.jpg" alt="" class="lazy-img" data-original="images/kjg_parasailing.jpg" title="" style="position: relative;"> </span>  
+											<!-- <div data-component="image" data-image-size="280x280#" data-name="components.image" data-use-url="true">
+												<div class="content content2" data-bind="fadeVisibleAndHide: !components.image.isState('editor')" style="visibility: visible; opacity: 1;"><a class="image-link" data-bind="if: components.image.hasLink() || !edit_page.isShowPage, attr: { href: components.image.link(), target: components.image.target() }" href="javascript:void(0);" target="_self"></a><span class="image-link" data-bind="ifnot: components.image.hasLink() || !edit_page.isShowPage"><img data-bind="attr: { 'class': 'lazy lazy-img', 'data-original': components.image.assetUrl, alt: components.image.caption, title: components.image.caption }" src="images/hal_hiking.png" alt="" class="lazy-img henry-hike" data-original="images/kjg_parasailing.jpg" title="" style="position: relative;"> </span>  
 												</div>
-											</div> 
+											</div>  -->
 										</div>
 										<h2 class="subtitle text-compontent" data-component="text" data-name="components.title" data-use-font="true">
 											<div class="content content2" data-bind="visible: !(components.name.isState('editor') || !components.name.hasContent()), htmlValue: components.name.value, style: window.edit_page.data.fontStyle('headingFont') ">
-												<div>Software Engineer,</div>
-												<div>Data Analyst</div>
+												<div>Software Engineer</div>												
 											</div>
 										</h2>
 										<div class="text3 text-component" data-component="text" data-name="components.title" data-use-font="true">
@@ -102,7 +103,14 @@
 												<div>San Francisco, CA</div>
 											</div>
 										</div>
-										<div id="about_me_text"> When not in San Francisco, you can find me scurrying up mountains, reading in a coffee shop, and/or hunting down delicious ice cream cones all around the world. I'm a data analyst by day, code things on the side, and spend the rest of my time outside.
+										<div id="about_me_text">I am a full stack software engineer with experience working on a variety of different technology stacks. I have a strong background in the Node.js environment and have architected both relational and noSQL databases. <br><br>
+
+										I have experience with Angular, Backbone, and React, and put emphasis on what would lead to the best experience for the user when selecting frameworks and technologies. I most recently worked on an application built using React and Redux.  <br><br>
+
+										Strong: JavaScript, Node.js with Express, ReactJS, HTML, CSS, jQuery, MySQL/PostgreSQL, Git
+										Experienced: AngularJS, Backbone.js, MongoDB, D3.js, PHP, Mocha/Chai <br><br>
+
+										Outside of code land, I enjoy running, cycling, volleyball, and riding motorcycles.
 										</div>
 									</div>
 								</div>
@@ -113,10 +121,9 @@
 				<li>
 					<div class="footer">
 						<ul>
-							<li><a href="mailto:kelseyjgross@gmail.com"> <img src="images/email_logo.png"> </a></li>
-							<li><a href="http://www.github.com/kjgross"> <img src="images/github_logo.jpg"> </a></li>
-							<li><a href="https://www.linkedin.com/in/kjgross"> <img src="images/linkedin_logo.png"> </a></li>
-							<li><a href="https://www.instagram.com/kelsey.gross/"> <img src="images/insta_logo.png"> </a></li>
+							<li><a href="mailto:hlyford11@gmail.com" target="_blank"> <img src="images/email_logo.png"> </a></li>
+							<li><a href="http://www.github.com/hlyford" target="_blank"> <img src="images/github_logo.jpg"> </a></li>
+							<li><a href="https://www.linkedin.com/in/hlyford" target="_blank"> <img src="images/linkedin_logo.png"> </a></li>				
 						</ul>
 					</div>
 				</li>
@@ -142,8 +149,7 @@
 									</h2> 
 									<h3 class="title2 center">
 										<div data-component="text" data-name="subtitle" data-text-type="body" class="text-component">
-											<div class="content content2" data-bind="visible: !(subtitle.isState('editor') || !subtitle.hasContent()), htmlValue: subtitle.value, style: window.edit_page.data.fontStyle('bodyFont') ">
-												<div> Some fun things on the side.</div>
+											<div class="content content2" data-bind="visible: !(subtitle.isState('editor') || !subtitle.hasContent()), htmlValue: subtitle.value, style: window.edit_page.data.fontStyle('bodyFont') ">												
 											</div>
 										</div>
 									</h3> 
@@ -151,24 +157,30 @@
 							</div> 
 
 							<div container>
-								<div class="left"> <img src="images/soccer_epic2.jpg" style="position: relative;">
+								<div class="left"> <img src="images/thumbcheckbg.png" style="position: relative;" class="larger-image">
 								</div>
 								<div class="right"> 
 									<h2 class="subtitle text-component" data-component="text" data-name="components.title" data-text-type="heading" data-use-font="true">
 										<div class="content content2" >
-											<div><a href="http://www.rosterblitz.com">Rosterblitz.com</a></div>
+											<div><a href="http://www.thumbcheck.me" target="_blank">Thumbcheck.me</a></div>
 										</div>
 									</h2>
 									<div class="div" data-bind="visible: components.subtitle.hasContentOrIsEditMode() "> 
 										<div class="text2 text-component" data-component="text" data-name="components.subtitle" data-use-font="true">
 											<div class="content content2">
-												<div class="job_title">Ideation and Full Backend Stack</div>
+												<div class="job_title">Software Engineer</div>
 											</div>
 										</div> 
 									</div> 
 									<div class="text text-component" data-component="text" data-name="components.description" data-use-font="true">
 										<div class="content content2">
-											<div>I led backend development for our team of three engineers. In doing so, I elected to utilize a NoSQL database (MongoDB) and Redis caching to store information from several different API calls made to a 3rd party sports data site. Throughout development, I solidified my understanding of the pros/cons of both relational and non-relational databases. I also learned NodeJS and focused on providing clean data in minimal time and memory for our frontend.
+											<div> <i>Real-time presentation feedback application for educators and presenters</i>
+											<ul class="list-dots"> 			                    
+												<li>Architected a responsive frontend with seamless rendering  using ReactJS with Redux, and Socket.io.</li>
+												<li>Engineered scalable and modular backend using Express with efficient API routing and controllers.</li>
+												<li>Implemented PostgreSQL database for persistent storage and Redis to track user state server-side.</li>
+											</ul>
+
 											</div>
 											<div>&nbsp;</div>
 										</div>
@@ -177,18 +189,23 @@
 							</div>
 							<div>&nbsp;</div>
 							<div container>
-								<div class="left"> <img src="images/advent_of_code.png" style="position: relative;">
+								<div class="left"> <img src="images/rentbot_image1.png" style="position: relative;" class="larger-image">
 								</div>
 								<div class="right"> 
 									<h2 class="subtitle text-component" data-component="text" data-name="components.title" data-text-type="heading" data-use-font="true">
-										<div class="content content2" >
-											<div><a href="http://www.github.com/kjgross/advent_of_code">Advent of Code</a></div>
-										</div>
+										<div class="content content2" >										
+											<div><a href="http://www.github.com/hlyford/rent-bot">Rent-Bot</a></div>
+										</div>										
 									</h2>
 									<div class="text text-component" data-component="text" data-name="components.description" data-use-font="true">
 										<div class="content content2">
-											<div>Solved the 25 two-part puzzles in python, with a specific focus on achieving the most effecient time and space complexity, brevity of code, and modularity. I utilized recursion, loops, json parsing, bit-mapping, and a bit of number theory to solve the fun holiday themed problems.  
-											</div>
+											<div class="job_title">Software Engineer</div>
+											<div> <i>Rent and bill collection automation app for roommates </i>
+											<ul class="list-dots"> 		
+											<li>Architected intuitive frontend using AngularJS for instaneous data updating as charges are assigned.</li>                    
+												<li>Utilized Venmo API for charge issuing and MongoDB for user transaction history.</li>
+												<li>Wrote script utilizing Twilio API to notify user via SMS and scheduled cron task to execute monthly. </li>												
+											</ul>
 										</div>
 									</div>   
 								</div>
@@ -199,7 +216,7 @@
 		<li class="slide selected" tabindex="0"> <a class="section-anchor" data-scroll-name="#3" style="top: -64px;"></a> <a class="section-name-anchor" data-section-name="My Work"></a> 
 					<a name="my_work"></a>
 				<div class="wide"> 
-					<div class="container"> 
+					<div class="container my-work-container"> 
 						<div class="row big"> 
 							<div class="sixteen columns"> 
 								<h2 class="title center" data-bind="visible:title.hasContentOrIsEditMode()"> 
@@ -217,7 +234,7 @@
 								<h3 class="title2 center">
 									<div data-component="text" data-name="subtitle" data-text-type="body" class="text-component">
 										<div class="content content2" data-bind="visible: !(subtitle.isState('editor') || !subtitle.hasContent()), htmlValue: subtitle.value, style: window.edit_page.data.fontStyle('bodyFont') ">
-											<div>I'm a data analyst looking to switch to fullstack software engineering.</div>
+											<div>Spent the last four years in software startup space in the Bay Area</div>
 										</div>
 									</div>
 								</h3> 
@@ -225,7 +242,7 @@
 						</div> 
 
 						<div container>
-							<div class="left"> <img src="images/edmodo_logo_center.jpg" style="position: relative;">
+							<div class="left"> <img src="images/edmodo_logo_center.jpg" style="position: relative;" class="larger-image-edmodo">
 							</div>
 							<div class="right"> 
 								<h2 class="subtitle text-component" data-component="text" data-name="components.title" data-text-type="heading" data-use-font="true">
@@ -236,46 +253,23 @@
 								<div class="div" data-bind="visible: components.subtitle.hasContentOrIsEditMode() "> 
 									<div class="text2 text-component" data-component="text" data-name="components.subtitle" data-use-font="true">
 										<div class="content content2">
-											<div class="job_title">Data Analyst</div>
+											<div class="job_title">Developers Relations Manager & API Evangelist</div>
 										</div>
 									</div> 
 								</div> 
 								<div class="text text-component" data-component="text" data-name="components.description" data-use-font="true">
 									<div class="content content2">
-										<div>I built dashboards and metrics to track progress toward company KPIs and identify how key factors such as geography, device usage, and acquisition rates impact the trends. I also utilized historic product usage patterns to advise product managers on next steps. Additionally, I analyzed the impact of student engagement with the Edmodo product on learning outcomes.
-										</div>
+									<ul class="list-dots"> 			                    
+										<li>Transitioned developer community to new API  as liaison between partners and internal engineering.</li>
+										<li>Orchestrated largest revenue generating deal to-date with Donors Choose and Khan Academy. </li>
+										<li>Managed all partner promotional activity for EdmodoCon conference increasing partner participation by 75% and total revenue by 50% over previous year. </li>
+										<li>Implemented frontend fixes to developer platform and took on bugs as needed in start-up environment.</li>
+									</ul>										
 										<div>&nbsp;</div>
 									</div>
 								</div>   
 							</div>
-						</div>
-
-						<div container>
-							<div class="left"> <img src="images/edmodo_logo_center.jpg" style="position: relative;">
-							</div>
-							<div class="right"> 
-								<h2 class="subtitle text-component" data-component="text" data-name="components.title" data-text-type="heading" data-use-font="true">
-									<div class="content content2" >
-										<div><a href="http://www.edmodo.com">Edmodo</a></div>
-									</div>
-								</h2>
-								<div class="div" data-bind="visible: components.subtitle.hasContentOrIsEditMode() "> 
-									<div class="text2 text-component" data-component="text" data-name="components.subtitle" data-use-font="true">
-										<div class="content content2">
-											<div class="job_title">Institution Support Specialist</div>
-										</div>
-									</div> 
-								</div> 
-								<div class="text text-component" data-component="text" data-name="components.description" data-use-font="true">
-									<div class="content content2">
-										<div>
-											I built out an enterprise-level support system matching the new enterprise product suite, providing Edmodo’s first focus on product renewal.Customers included administrators for several of the largest public school systems in the U.S. I also identified customers at risk of churning based on product usage behavior, then provided custom outreach and training to reverse the trend while maintaining a (~98%) customer-satisfaction rating.
-										</div>
-										<div>&nbsp;</div>
-									</div>
-								</div>   
-							</div>
-						</div>
+						</div>			
 
 				</div>
 			</div>  
@@ -284,11 +278,10 @@
 	</div>
 	<div class="footer">
 		<ul>
-			<li><a href="mailto:kelseyjgross@gmail.com"> <img src="images/email_logo.png"> </a></li>
-			<li><a href="http://www.github.com/kjgross"> <img src="images/github_logo.jpg"> </a></li>
-			<li><a href="https://www.linkedin.com/in/kjgross"> <img src="images/linkedin_logo.png"> </a></li>
-			<li><a href="https://www.instagram.com/kelsey.gross/"> <img src="images/insta_logo.png"> </a></li>
-		</ul>
+							<li><a href="mailto:hlyford11@gmail.com" target="_blank"> <img src="images/email_logo.png"> </a></li>
+							<li><a href="http://www.github.com/hlyford" target="_blank"> <img src="images/github_logo.jpg"> </a></li>
+							<li><a href="https://www.linkedin.com/in/hlyford" target="_blank"> <img src="images/linkedin_logo.png"> </a></li>							
+						</ul>
 	<div>&nbsp;</div>
 	</div>
 </body>

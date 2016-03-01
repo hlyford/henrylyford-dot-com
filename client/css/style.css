@@ -293,7 +293,7 @@ a.section-name-anchor, a.section-anchor {
 
 
 .container .five.columns {
-   width: 278px;
+   width: 85%;
 }
 
 /*.container .five.columns {
@@ -333,6 +333,7 @@ a.section-name-anchor, a.section-anchor {
 
 .center {
     text-align: center;
+    margin: 0 auto 0 auto;
 }
 
 .footer {
@@ -374,7 +375,7 @@ a.section-name-anchor, a.section-anchor {
 }
 
 .right {
-    margin-left: 30%;
+    margin-left: 47%;
     height: 200px;
 }
 
@@ -387,8 +388,37 @@ a.section-name-anchor, a.section-anchor {
 }
 
 .left img{
-    padding-left: 25%;
+    padding-left: 5%;
     max-width: 150px; 
     max-height: 150px;
 }
 
+/* ----- HENRY STYLES ------ */
+.henry-hike {
+  rotation-point:50% 50%;
+  rotation:180deg;
+}
+@font-face {
+  font-family: 'HelveticaNeue-Thin'; /*a name to be used later*/
+  src: url('./HelveticaNeue-Thin.otf'); /*URL to font*/
+}
+body { font-family: 'HelveticaNeue-Thin'!important;}
+
+.list-dots {
+    list-style-type: circle;
+}
+.larger-image {
+    min-width: 170%;    
+    min-height: 90%;    
+}
+.larger-image-edmodo {
+    min-width: 150%;    
+    min-height: 150%;    
+    margin-left: 15%;
+}
+.main-container {
+    margin-bottom: 5%;
+}
+.my-work-container {
+    margin-top: 5%!important;
+}
