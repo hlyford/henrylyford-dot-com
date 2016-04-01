@@ -422,3 +422,9 @@ body { font-family: 'HelveticaNeue-Thin'!important;}
 .my-work-container {
     margin-top: 5%!important;
 }
+.job-1 {
+    min-height: 250px;
+}
+.left-jobs {
+    margin-top: -4%;
+}
