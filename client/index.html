@@ -8,7 +8,7 @@
   <meta name="author" content="Henry Lyford">
   <meta name="keywords" content="Henry Lyford, Claremont McKenna College, Alaska, Claremont, San Francisco, Edmodo"/>
   <meta property="description" content="">
-	
+
   <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/b/b2/Hausziege_04.jpg" sizes="16x16" type="image/png"/>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/bootstrap-theme.min.css">
@@ -22,32 +22,32 @@
 				<a class="section-anchor" data-scroll-name="#2"></a>
 				<a class="section-name-anchor" data-section-name="Welcome"></a><a name="welcome"></a>
 				<div class="wide image resize strikingly-light-text lazy-background hasImage" data-bind="'className': background.getSelectedClassName(), 'style': background.selectedStyleLazy(), 'css':{'lazy':true, 'lazy-background':true, 'video-bg': background.video.videoBackgroundEnabled, hasImage:background.hasContent()}, 'attr': {'data-background': background.assetUrl()}"
-				 data-background="images/hal_alaska.png" style="background-image: url(&quot;images/hal_pano.png&quot;); background-size: auto; background-position: 49% 50%; background-repeat: no-repeat; margin: -32px;"> 
-					<div class="container"> 
-						<div class="sixteen columns"> 
-							<div class="spacer" style="height:10px">&nbsp;</div> 
-								<h3 class="subtitle"> 
-									<span class="line" data-bind="visible:text1.value().length > 0"></span> 
+				 data-background="images/hal_alaska.png" style="background-image: url(&quot;images/hal_pano.png&quot;); background-size: cover; background-position: 49% 50%; background-repeat: no-repeat; margin: -32px;">
+					<div class="container">
+						<div class="sixteen columns">
+							<div class="spacer" style="height:10px">&nbsp;</div>
+								<h3 class="subtitle">
+									<span class="line" data-bind="visible:text1.value().length > 0"></span>
 									<div class="ib">
 										<div data-component="text" data-name="text1" data-text-type="body" class="text-component">
 											<div class="content content2" data-bind="visible: !(text1.isState('editor') || !text1.hasContent()), htmlValue: text1.value, style: window.edit_page.data.fontStyle('bodyFont') ">
 												<div></div>
 											</div>
 										</div>
-									</div> 
-									<span class="line" data-bind="visible:text1.value().length > 0"></span> 
-								</h3> 
+									</div>
+									<span class="line" data-bind="visible:text1.value().length > 0"></span>
+								</h3>
 								<h1 class="title big">
 									<div data-component="text" data-name="text2" data-text-type="title" class="text-component">
 										<div class="content content2" data-bind="visible: !(text2.isState('editor') || !text2.hasContent()), htmlValue: text2.value, style: window.edit_page.data.fontStyle('titleFont') ">
 											<div>Henry Lyford</div>
 										</div>
 									</div>
-								</h1> 
-								<br> 
-								<br> 
-							</div> 
-						</div> 
+								</h1>
+								<br>
+								<br>
+							</div>
+						</div>
 					</div>
 				</li>
 				<li class="slide" tabindex="0">
@@ -60,11 +60,11 @@
 							<div class="center">
 								<div class="no-float mb30 repeatable" data-bind="mouseenter: mouseeneterHandler, mouseleave: mouseleaveHandler">
 									<div class="five columns center">
-										<div class="imagecover" data-bind="visible: components.image.hasContentOrIsEditMode">										
+										<div class="imagecover" data-bind="visible: components.image.hasContentOrIsEditMode">
 										</div>
 										<h2 class="subtitle text-compontent" data-component="text" data-name="components.title" data-use-font="true">
 											<div class="content content2" data-bind="visible: !(components.name.isState('editor') || !components.name.hasContent()), htmlValue: components.name.value, style: window.edit_page.data.fontStyle('headingFont') ">
-												<div>Software Engineer</div>												
+												<div>Software Engineer</div>
 											</div>
 										</h2>
 										<div class="text3 text-component" data-component="text" data-name="components.title" data-use-font="true">
@@ -93,59 +93,59 @@
 						<ul>
 							<li><a href="mailto:hlyford11@gmail.com" target="_blank"> <img src="images/email_logo.png"> </a></li>
 							<li><a href="http://www.github.com/hlyford" target="_blank"> <img src="images/github_logo.jpg"> </a></li>
-							<li><a href="https://www.linkedin.com/in/hlyford" target="_blank"> <img src="images/linkedin_logo.png"> </a></li>				
+							<li><a href="https://www.linkedin.com/in/hlyford" target="_blank"> <img src="images/linkedin_logo.png"> </a></li>
 						</ul>
 					</div>
 				</li>
-				<li class="slide selected" tabindex="0"> 
+				<li class="slide selected" tabindex="0">
 					<span class="anchor" id="section1"></span>
-					<a class="section-name-anchor"></a> 
+					<a class="section-name-anchor"></a>
 					<a name="my_projects"></a>
-					<div class="wide"> 
-						<div class="container"> 
-							<div class="row big"> 
-								<div class="sixteen columns"> 
-									<h2 class="title center" data-bind="visible:title.hasContentOrIsEditMode()"> 
-										<div class="ib relative"> 
-											<span class="line-abs" data-bind="visible:title.hasContent()"></span> 
+					<div class="wide">
+						<div class="container projects">
+							<div class="row big">
+								<div class="sixteen columns">
+									<h2 class="title center" data-bind="visible:title.hasContentOrIsEditMode()">
+										<div class="ib relative">
+											<span class="line-abs" data-bind="visible:title.hasContent()"></span>
 											<div data-component="text" data-name="title" data-text-type="heading" class="text-component">
 												<div class="content content2" data-bind="visible: !(title.isState('editor') || !title.hasContent()), htmlValue: title.value, style: window.edit_page.data.fontStyle('headingFont') ">
 													<div>My Projects</div>
 												</div>
-											</div> 
-											<span class="line-abs right" data-bind="visible:title.hasContent()"></span> 
-										</div> 
-										<span class="line fixed-show" data-bind="visible:title.hasContent()"></span> 
-									</h2> 
+											</div>
+											<span class="line-abs right" data-bind="visible:title.hasContent()"></span>
+										</div>
+										<span class="line fixed-show" data-bind="visible:title.hasContent()"></span>
+									</h2>
 									<h3 class="title2 center">
 										<div data-component="text" data-name="subtitle" data-text-type="body" class="text-component">
-											<div class="content content2" data-bind="visible: !(subtitle.isState('editor') || !subtitle.hasContent()), htmlValue: subtitle.value, style: window.edit_page.data.fontStyle('bodyFont') ">												
+											<div class="content content2" data-bind="visible: !(subtitle.isState('editor') || !subtitle.hasContent()), htmlValue: subtitle.value, style: window.edit_page.data.fontStyle('bodyFont') ">
 											</div>
 										</div>
-									</h3> 
-								</div> 
-							</div> 
+									</h3>
+								</div>
+							</div>
 
-							<div container>
+							<div class="sections">
 								<div class="left"> <img src="images/thumbcheckbg.png" style="position: relative;" class="larger-image">
 								</div>
-								<div class="right"> 
+								<div class="right">
 									<h2 class="subtitle text-component" data-component="text" data-name="components.title" data-text-type="heading" data-use-font="true">
 										<div class="content content2" >
 											<div><a href="http://www.thumbcheck.me" target="_blank">Thumbcheck.me</a></div>
 										</div>
 									</h2>
-									<div class="div" data-bind="visible: components.subtitle.hasContentOrIsEditMode() "> 
+									<div class="div" data-bind="visible: components.subtitle.hasContentOrIsEditMode() ">
 										<div class="text2 text-component" data-component="text" data-name="components.subtitle" data-use-font="true">
 											<div class="content content2">
 												<div class="job_title">Software Engineer</div>
 											</div>
-										</div> 
-									</div> 
+										</div>
+									</div>
 									<div class="text text-component" data-component="text" data-name="components.description" data-use-font="true">
 										<div class="content content2">
 											<div> <i>Real-time presentation feedback application for educators and presenters</i>
-											<ul class="list-dots"> 			                    
+											<ul class="list-dots">
 												<li>Architected a responsive frontend with seamless rendering  using ReactJS with Redux, and Socket.io.</li>
 												<li>Engineered scalable and modular backend using Express with efficient API routing and controllers.</li>
 												<li>Implemented PostgreSQL database for persistent storage and Redis to track user state server-side.</li>
@@ -154,153 +154,154 @@
 											</div>
 											<div>&nbsp;</div>
 										</div>
-									</div>   
+									</div>
 								</div>
 							</div>
 							<div>&nbsp;</div>
-							<div container>
+							<div class="sections">
 								<div class="left"> <img src="images/rentbot_image1.png" style="position: relative;" class="larger-image">
 								</div>
-								<div class="right"> 
+								<div class="right">
 									<h2 class="subtitle text-component" data-component="text" data-name="components.title" data-text-type="heading" data-use-font="true">
-										<div class="content content2" >										
+										<div class="content content2" >
 											<div><a href="http://www.github.com/hlyford/rent-bot">Rent-Bot</a></div>
-										</div>										
+										</div>
 									</h2>
 									<div class="text text-component" data-component="text" data-name="components.description" data-use-font="true">
 										<div class="content content2">
 											<div class="job_title">Software Engineer</div>
 											<div> <i>Rent and bill collection automation app for roommates </i>
-											<ul class="list-dots"> 		
-											<li>Architected intuitive frontend using AngularJS for instaneous data updating as charges are assigned.</li>                    
+											<ul class="list-dots">
+											<li>Architected intuitive frontend using AngularJS for instaneous data updating as charges are assigned.</li>
 												<li>Utilized Venmo API for charge issuing and MongoDB for user transaction history.</li>
-												<li>Wrote script utilizing Twilio API to notify user via SMS and scheduled cron task to execute monthly. </li>												
+												<li>Wrote script utilizing Twilio API to notify user via SMS and scheduled cron task to execute monthly. </li>
 											</ul>
 										</div>
-									</div>   
+									</div>
 								</div>
 							</div>
 					</div>
-				</div>  
+				</div>
 		</li>
-		<li class="slide selected" tabindex="0"> <a class="section-anchor" data-scroll-name="#3" style="top: -64px;"></a> <a class="section-name-anchor" data-section-name="My Work"></a> 
+		<li class="slide selected" tabindex="0"> <a class="section-anchor" data-scroll-name="#3" style="top: -64px;"></a> <a class="section-name-anchor" data-section-name="My Work"></a>
 					<a name="my_work"></a>
-				<div class="wide"> 
-					<div class="container my-work-container"> 
-						<div class="row big"> 
-							<div class="sixteen columns"> 
-								<h2 class="title center" data-bind="visible:title.hasContentOrIsEditMode()"> 
-									<div class="ib relative"> 
-										<span class="line-abs" data-bind="visible:title.hasContent()"></span> 
+				<div class="wide">
+					<div class="container my-work-container">
+						<div class="row big">
+							<div class="sixteen columns">
+								<h2 class="title center" data-bind="visible:title.hasContentOrIsEditMode()">
+									<div class="ib relative">
+										<span class="line-abs" data-bind="visible:title.hasContent()"></span>
 										<div data-component="text" data-name="title" data-text-type="heading" class="text-component">
 											<div class="content content2" data-bind="visible: !(title.isState('editor') || !title.hasContent()), htmlValue: title.value, style: window.edit_page.data.fontStyle('headingFont') ">
 												<div>My Work</div>
 											</div>
-										</div> 
-										<span class="line-abs right" data-bind="visible:title.hasContent()"></span> 
-									</div> 
-									<span class="line fixed-show" data-bind="visible:title.hasContent()"></span> 
-								</h2> 
+										</div>
+										<span class="line-abs right" data-bind="visible:title.hasContent()"></span>
+									</div>
+									<span class="line fixed-show" data-bind="visible:title.hasContent()"></span>
+								</h2>
 								<h3 class="title2 center">
 									<div data-component="text" data-name="subtitle" data-text-type="body" class="text-component">
 										<div class="content content2" data-bind="visible: !(subtitle.isState('editor') || !subtitle.hasContent()), htmlValue: subtitle.value, style: window.edit_page.data.fontStyle('bodyFont') ">
 											<div>Spent the last four years in software startup space in the Bay Area</div>
 										</div>
 									</div>
-								</h3> 
-							</div> 
-						</div> 
+								</h3>
+							</div>
+						</div>
 
 						<!-- job #1  -->
-						<div container class="job-1">
-							<div class="left left-jobs"><a href="http://www.commonsense.org" target="_blank"> <img src="images/commonsense2.png" style="position: relative;" class="larger-image-edmodo"></a>
+						<div class="job-1 sections">
+							<div class="left left-jobs"><a href="http://www.commonsense.org" target="_blank"> <img src="images/commonsense2.png" style="position: relative;" class="common-sense-image"></a>
 							</div>
-							<div class="right"> 
+							<div class="right">
 								<h2 class="subtitle text-component" data-component="text" data-name="components.title" data-text-type="heading" data-use-font="true">
 									<div class="content content2" >
 										<div><a href="http://www.commonsense.org">Common Sense Media</a></div>
 									</div>
 								</h2>
-								<div class="div" data-bind="visible: components.subtitle.hasContentOrIsEditMode() "> 
+								<div class="div" data-bind="visible: components.subtitle.hasContentOrIsEditMode() ">
 									<div class="text2 text-component" data-component="text" data-name="components.subtitle" data-use-font="true">
 										<div class="content content2">
 											<div class="job_title">Software Engineer</div>
 										</div>
-									</div> 
-								</div> 
+									</div>
+								</div>
 								<div class="text text-component" data-component="text" data-name="components.description" data-use-font="true">
 									<div class="content content2">
-									<ul class="list-dots"> 			                    
-										<li>Work as frontend engineer on parent user facing on team with product, design, and backend engineering.</li>										
-										<li>Own site modifications, bug fixes, and performance improvements from initial story creation to feature release.</li>
-									</ul>										
+									<ul class="list-dots">
+										<li>Built site's primary landing page at <a href="https://commonsense.org" target="_blank">commonsense.org</a>.</li>
+										<li>Architected and implemented interactive <a href="https://www.commonsensemedia.org/kids-action/our-initiatives/legislative-ratings#/state" target="_blank">Legislative Ratings page</a> using AngularJS and receiving JSON data from Drupal view</li>
+										<li>Worked closely with design and product to deliver pixel-perfect modifications, bug fixes, and performance improvements from initial story creation to feature release.</li>
+									</ul>
 										<div>&nbsp;</div>
 									</div>
-								</div>   
+								</div>
 							</div>
-						</div>	
+						</div>
 
 						<!-- job #2  -->
-						<div container class="job-1">
+						<div class="job-1 sections">
 							<div class="left left-jobs"><a href="http://www.edmodo.com" target="_blank"> <img src="images/edmodo_logo_center.jpg" style="position: relative;" class="larger-image-edmodo"></a>
 							</div>
-							<div class="right"> 
+							<div class="right">
 								<h2 class="subtitle text-component" data-component="text" data-name="components.title" data-text-type="heading" data-use-font="true">
 									<div class="content content2" >
 										<div><a href="http://www.edmodo.com">Edmodo</a></div>
 									</div>
 								</h2>
-								<div class="div" data-bind="visible: components.subtitle.hasContentOrIsEditMode() "> 
+								<div class="div" data-bind="visible: components.subtitle.hasContentOrIsEditMode() ">
 									<div class="text2 text-component" data-component="text" data-name="components.subtitle" data-use-font="true">
 										<div class="content content2">
 											<div class="job_title">Software Engineer</div>
 										</div>
-									</div> 
-								</div> 
+									</div>
+								</div>
 								<div class="text text-component" data-component="text" data-name="components.description" data-use-font="true">
 									<div class="content content2">
-									<ul class="list-dots"> 			                    
-										<li>Built dashboard and validation script for partner content submissions thereby significantly reducing the resources needed to review and ingest partner JSON and CSV submissions.</li>										
+									<ul class="list-dots">
+										<li>Built dashboard and validation script for partner content submissions thereby significantly reducing the resources needed to review and ingest partner JSON and CSV submissions.</li>
 										<li>Modified frontend for both publisher dashboards and user-facing Edmodo Store storefront to accommodate transition to new API and changes in third party developer requirements.</li>
-									</ul>										
+									</ul>
 										<div>&nbsp;</div>
 									</div>
-								</div>   
+								</div>
 							</div>
-						</div>	
+						</div>
 
 						<!-- job #3  -->
-						<div container>
+						<div class="sections">
 							<div class="left left-jobs"> <a href="http://www.edmodo.com" target="_blank"> <img src="images/edmodo_logo_center.jpg" style="position: relative;" class="larger-image-edmodo"></a>
 							</div>
-							<div class="right"> 
+							<div class="right">
 								<h2 class="subtitle text-component" data-component="text" data-name="components.title" data-text-type="heading" data-use-font="true">
 									<div class="content content2" >
 										<div><a href="http://www.edmodo.com">Edmodo</a></div>
 									</div>
 								</h2>
-								<div class="div" data-bind="visible: components.subtitle.hasContentOrIsEditMode() "> 
+								<div class="div" data-bind="visible: components.subtitle.hasContentOrIsEditMode() ">
 									<div class="text2 text-component" data-component="text" data-name="components.subtitle" data-use-font="true">
 										<div class="content content2">
 											<div class="job_title">Developer Relations Manager & Platform Engineer</div>
 										</div>
-									</div> 
-								</div> 
+									</div>
+								</div>
 								<div class="text text-component" data-component="text" data-name="components.description" data-use-font="true">
 									<div class="content content2">
-									<ul class="list-dots"> 			                    										
+									<ul class="list-dots">
 										<li>Orchestrated largest revenue generating deal to-date with Donors Choose and Khan Academy. </li>
 										<li>Managed all partner promotional activity for EdmodoCon conference increasing partner participation by 75% and total revenue by 50% over previous year. </li>
 										<li>Transitioned developer community to new API as liaison between partners and internal engineering including architecting third party developer usage of Edmodo API to enhance partner app experience.</li>
-									</ul>										
+									</ul>
 										<div>&nbsp;</div>
 									</div>
-								</div>   
+								</div>
 							</div>
-						</div>			
+						</div>
 
 				</div>
-			</div>  
+			</div>
 		</li>
 		</ul>
 	</div>
@@ -308,7 +309,7 @@
 		<ul>
 							<li><a href="mailto:hlyford11@gmail.com" target="_blank"> <img src="images/email_logo.png"> </a></li>
 							<li><a href="http://www.github.com/hlyford" target="_blank"> <img src="images/github_logo.jpg"> </a></li>
-							<li><a href="https://www.linkedin.com/in/hlyford" target="_blank"> <img src="images/linkedin_logo.png"> </a></li>							
+							<li><a href="https://www.linkedin.com/in/hlyford" target="_blank"> <img src="images/linkedin_logo.png"> </a></li>
 						</ul>
 	<div>&nbsp;</div>
 	</div>

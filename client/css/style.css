@@ -90,7 +90,7 @@ ul.slides li.slide {
     padding: 50px 0;
 }
 
-#header-container .header .nav ul a:hover { 
+#header-container .header .nav ul a:hover {
     background-color: gray;
 }
 
@@ -341,8 +341,8 @@ a.section-name-anchor, a.section-anchor {
     color:black;
     clear:both;
     text-align:center;
-    padding-top:5px; 
-    padding-bottom:15px; 
+    padding-top:5px;
+    padding-bottom:15px;
 }
 
 
@@ -390,7 +390,7 @@ a.section-name-anchor, a.section-anchor {
 
 .left img{
     padding-left: 5%;
-    max-width: 150px; 
+    max-width: 150px;
     max-height: 150px;
 }
 
@@ -405,16 +405,25 @@ a.section-name-anchor, a.section-anchor {
 }
 body { font-family: 'HelveticaNeue-Thin'!important;}
 
+.projects, .my-work-container {
+    font-size: 1.2em;
+}
+
 .list-dots {
     list-style-type: circle;
 }
 .larger-image {
-    min-width: 170%;    
-    min-height: 90%;    
+    min-width: 170%;
+    min-height: 90%;
+}
+.common-sense-image {
+    min-width: 150%;
+    min-height: 120%;
+    margin-left: 15%;
 }
 .larger-image-edmodo {
-    min-width: 150%;    
-    min-height: 150%;    
+    min-width: 150%;
+    min-height: 150%;
     margin-left: 15%;
 }
 .main-container {
@@ -423,9 +432,13 @@ body { font-family: 'HelveticaNeue-Thin'!important;}
 .my-work-container {
     margin-top: 5%!important;
 }
+.sections {
+    min-height: 250px;
+}
 .job-1 {
     min-height: 250px;
 }
 .left-jobs {
     margin-top: -4%;
 }
+.sections .list-dots a{ color: #6666E0!important;}
